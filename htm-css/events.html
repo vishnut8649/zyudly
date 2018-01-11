@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Testing</title>
+</head>
+<body>
+<div>
+	<button onclick="document.getElementById('b2').style.backgroundColor='yellow'">click to change colour of next button</button>
+</div>
+<div>
+	<button id='b2' onclick="document.getElementById('date').innerHTML=Date()">The time is?</button>
+	<p id="date"></p>
+</div>
+	<span onmouseover="this.style.color='red'"
+	onmouseout="this.style.color='black'">Mouse over me!</span>
+<br>
+<button id='b3'>Click me</button>
+
+</body>
+<script type="text/javascript">
+	var button=document.getElementById('b3')
+	button.addEventListener('click',function(){alert('Clicked');});
+</script>
+</html>

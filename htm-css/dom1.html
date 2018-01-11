@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>example 1</title>
+</head>
+<body>
+	<h1>Sample heading</h1>
+	<p id='test1'></p>
+	<p id='test2'>Test paragraph2</p>
+</body>
+<script type="text/javascript">
+	document.getElementsByTagName('H1')[0].style.backgroundColor='yellow';
+
+
+	document.getElementById("test1").innerHTML='This is to test the methods and properties of element';
+	document.getElementById("test2").style.color='red'
+	var p3=document.createElement('P')
+	var t = document.createTextNode('This is 3rd test createElement')
+	p3.appendChild(t)
+	document.body.appendChild(p3)
+
+</script>
+</htm
